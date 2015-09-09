@@ -1,0 +1,52 @@
+<!--
+  Application Layout
+-->
+<ion-view>
+  <ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-stable">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear fa fa-bars" menu-toggle="left">
+          </button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+
+      <ion-view>
+        <ion-tabs class="tabs-item-hide">
+
+          <!--
+            Parent views are defined as new tabs here,
+            child views do not need to be defined as tabs
+          -->
+
+          <ion-tab href="#/tab/">
+            <ion-nav-view name="application"></ion-nav-view>
+          </ion-tab>
+
+        </ion-tabs>
+      </ion-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Menu</h1>
+      </ion-header-bar>
+      <ion-content>
+        <ion-list>
+          <ion-item menu-close href="#/one">
+            One
+          </ion-item>
+          <ion-item menu-close href="#/two">
+            Two
+          </ion-item>
+          <ion-item menu-close href="#/three">
+            Three
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+</ion-view>
